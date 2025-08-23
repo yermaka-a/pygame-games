@@ -1,8 +1,9 @@
 import pygame
 import sys
+import pathlib
+ROOT = pathlib.Path.cwd
 
-
-
+print(ROOT)
 class Game:
     def __init__(self):
         pygame.init()
@@ -10,6 +11,8 @@ class Game:
         pygame.display.set_caption('ninja game')
         self.screen = pygame.display.set_mode((640, 480))
         self.clock = pygame.time.Clock()
+        
+        self.img = pygame.image.load('data/images/clouds/cloud_1.png')
     
     def run(self):            
         while True:
