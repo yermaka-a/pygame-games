@@ -1,3 +1,3 @@
 run:
-	uv run ./first/game.py
+	uv run ./first/main.py
 	
